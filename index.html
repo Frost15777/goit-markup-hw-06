@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <title>Студія</title>
   </head>
 
@@ -55,9 +56,74 @@
             </li>
           </ul>
         </address>
+        <!-- Mobile -->
+        <button type="button" class="menu-open-btn" data-menu-open>=</button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="menu-close-btn" data-menu-close>
+            x
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a href="./index.html" class="mob-link link">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="./portfolio.html" class="mob-link link">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="" class="mob-link link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mob-contacts-list list">
+            <li class="mob-contacts-item">
+              <a href="tel:+110001111111" class="mob-contacts link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mob-contacts-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mob-contacts-email link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-social-list list">
+            <li class="mob-social-item">
+              <a class="mob-social-link" href="">
+                <svg class="mob-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a class="mob-social-link" href="">
+                <svg class="mob-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a class="mob-social-link" href="">
+                <svg class="mob-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a class="mob-social-link" href="">
+                <svg class="mob-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
-
     <!--Main-content-->
     <main>
       <!--Section-one-->
@@ -132,6 +198,7 @@
           <ul class="list-section-three list">
             <li class="item-section-three">
               <img
+                srcset="./images/img-1-1x.jpg, ./images/img-1-2x.jpg"
                 src="./images/img-1.jpg"
                 width="360"
                 height="300"
@@ -140,6 +207,7 @@
             </li>
             <li class="item-section-three">
               <img
+                srcset="./images/img-2-1x.jpg, ./images/img-2-2x.jpg"
                 src="./images/img-2.jpg"
                 width="360"
                 height="300"
@@ -148,6 +216,7 @@
             </li>
             <li class="item-section-three">
               <img
+                srcset="./images/img-3-1x.jpg, ./images/img-3-2x.jpg"
                 src="./images/img-3.jpg"
                 width="360"
                 height="300"
@@ -164,14 +233,15 @@
           <ul class="list-section-four list">
             <li class="item-section-four">
               <img
+                srcset="./images/img-4-1x.jpg, ./images/img-4-2x.jpg"
                 src="./images/img-4.jpg"
                 width="264"
                 height="260"
                 alt="Product designer's photo."
               />
               <div class="worker">
-                <h3 class="title">Mark Guerrero</h3>
-                <p class="section-text">Product Designer</p>
+                <h3 class="title team">Mark Guerrero</h3>
+                <p class="section-text team-text">Product Designer</p>
                 <ul class="social-media-list list">
                   <li class="social-media-item">
                     <a class="link-section-four" href="">
@@ -206,14 +276,15 @@
             </li>
             <li class="item-section-four">
               <img
+                srcset="./images/img-5-1x.jpg, ./images/img-5-2x.jpg"
                 src="./images/img-5.jpg"
                 width="264"
                 height="260"
                 alt="Frontent developer's photo."
               />
               <div class="worker">
-                <h3 class="title">Tom Ford</h3>
-                <p class="section-text">Frontend Developer</p>
+                <h3 class="title team">Tom Ford</h3>
+                <p class="section-text team-text">Frontend Developer</p>
                 <ul class="social-media-list list">
                   <li class="social-media-item">
                     <a class="link-section-four" href="">
@@ -248,14 +319,15 @@
             </li>
             <li class="item-section-four">
               <img
+                srcset="./images/img-6-1x.jpg, ./images/img-6-2x.jpg"
                 src="./images/img-6.jpg"
                 width="264"
                 height="260"
                 alt="Marketing's photo."
               />
               <div class="worker">
-                <h3 class="title">Camila Garcia</h3>
-                <p class="section-text">Marketing</p>
+                <h3 class="title team">Camila Garcia</h3>
+                <p class="section-text team-text">Marketing</p>
                 <ul class="social-media-list list">
                   <li class="social-media-item">
                     <a class="link-section-four" href="">
@@ -290,14 +362,15 @@
             </li>
             <li class="item-section-four">
               <img
+                srcset="./images/img-7-1x.jpg, ./images/img-7-2x.jpg"
                 src="./images/img-7.jpg"
                 width="264"
                 height="260"
                 alt="UI designer's photo."
               />
               <div class="worker">
-                <h3 class="title">Daniel Wilson</h3>
-                <p class="section-text">UI Designer</p>
+                <h3 class="title team">Daniel Wilson</h3>
+                <p class="section-text team-text">UI Designer</p>
                 <ul class="social-media-list list">
                   <li class="social-media-item">
                     <a class="link-section-four" href="">
@@ -455,7 +528,7 @@
       <div class="modal-window">
         <button data-modal-close type="button" class="button-close">
           <svg class="modal-cross" width="8" height="8">
-            <use href="./images/icons.svg#icon-modal"></use>
+            <use href="./images/icons.svg#icon-cross"></use>
           </svg>
         </button>
         <p class="text-modal-window">
@@ -538,5 +611,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
