@@ -240,6 +240,8 @@ img {
     height: 100vh;
     padding: 40px;
     background-color: var(--white-background-color);
+    transform: translateX(-0%);
+    transition-duration: 250ms;
     overflow: auto;
 }
 
