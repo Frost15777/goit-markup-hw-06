@@ -12,12 +12,16 @@
     }
 }
 
-@media screen and (min-width: 429px) and (max-width: 768px) {
+@media screen and (min-width: 428px) and (max-width: 767px) {
     .section.main {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/img-17-2xtablet.jpg');
     }
 
     .form-input-footer {
+        width: 396px;
+    }
+
+    .item-section-two {
         width: 396px;
     }
 }
@@ -48,10 +52,9 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .modal {
         overflow: scroll;
-
     }
 
     .modal-window {
@@ -80,7 +83,6 @@
     }
 
     .page-title {
-        font-size: 36px;
         letter-spacing: 0.72px;
         margin: 0 auto;
         margin-bottom: 32px;
@@ -103,6 +105,15 @@
         margin: 0 auto;
         margin-bottom: 8px;
         font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .team {
+        margin: 0 auto;
+        margin-bottom: 8px;
+        font-size: 36px;
+        font-weight: 500;
         text-align: center;
     }
 
@@ -116,12 +127,12 @@
         margin: 0 auto;
     }
 
-    .list.item-section-two {
-        margin-bottom: 72px;
+    .list-section-two {
+        gap: 72px;
     }
 
-    .list.item-section-two:last-child {
-        margin-bottom: 0;
+    .list.item-section-two {
+        margin-bottom: 72px;
     }
 
     .section-three {
@@ -132,12 +143,12 @@
         padding: 96px 0;
     }
 
-    .item-section-four {
-        margin-bottom: 72px;
+    .list-section-four {
+        display: inline-grid;
     }
 
-    .item-section-four:last-child {
-        margin-bottom: 0;
+    .item-section-four {
+        margin-bottom: 72px;
     }
 
     .section-five {
@@ -242,7 +253,7 @@
     }
 
     section .container .list {
-        width: 768px;
+        max-width: 768px;
         flex-direction: row;
         flex-basis: calc((100% - 24px) / 2);
         flex-wrap: wrap;
@@ -262,6 +273,16 @@
         text-align: center;
         font-weight: 500;
         margin-bottom: 8px;
+    }
+
+    .list-section-two {
+        display: flex;
+        justify-content: space-between;
+        gap: 72px 24px;
+    }
+
+    .item-section-two {
+        width: 356px;
     }
 
     .list.item-section-two:nth-child(1) {
@@ -309,6 +330,9 @@
     }
 
     .list-section-five {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         column-gap: 24px;
     }
 
@@ -361,11 +385,6 @@
     .section-five {
         max-width: 582px;
         margin: 0 auto;
-    }
-
-    .list-section-five {
-        display: flex;
-        flex-wrap: wrap;
     }
 }
 
