@@ -422,7 +422,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    margin: 72px auto 0;
     padding: 0;
 }
 
@@ -443,7 +442,6 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
-    margin: 72px auto 0;
 }
 
 .item-section-four {
