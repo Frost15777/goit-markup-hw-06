@@ -155,10 +155,7 @@
 
     .list-section-four {
         display: inline-grid;
-    }
-
-    .item-section-four {
-        margin-bottom: 72px;
+        gap: 72px;
     }
 
     .section-five {
